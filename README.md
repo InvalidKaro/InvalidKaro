@@ -40,7 +40,7 @@ I'm Karo, I'm 19 years old and I've gained a lot of experience in development an
 
 <a href="http://www.github.com/InvalidKaro"><img src="https://github-readme-streak-stats.herokuapp.com/?user=InvalidKaro&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
 
-<a href="http://www.github.com/InvalidKaro"><img src="https://github-readme-activity-graph.vercel.app/graph?username=invalidkaro&bg_color=1C1917&color=0891B2&line=0891B2&point=FFFFFF&area=true&area_color=FFFFFF&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph" alt="GitHub Commits Graph" /></a>
+<a href="http://www.github.com/InvalidKaro"><img src="https://github-readme-activity-graph.vercel.app/graph?username=invalidkaro&bg_color=1C1917&custom_title=Invalid%20Karo%27s%20Commits&color=0891B2&line=0891B2&point=FFFFFF&area=true&area_color=FFFFFF&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph" alt="GitHub Commits Graph" /></a>
 
 <a href="https://github.com/InvalidKaro" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=InvalidKaro&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" alt="Top Languages" /></a>
 
