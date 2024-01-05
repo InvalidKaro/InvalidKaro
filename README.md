@@ -20,7 +20,7 @@ src="https://img.shields.io/twitter/follow/karoschal?logo=twitter&style=for-the-
 /></a>
 
 
-<!--My Coding Activity:waka-->
+<!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
 
 ### Skills
