@@ -18,6 +18,11 @@ I'm Karo, I'm 19 years old and I've gained a lot of experience in development an
 <a href="https://www.x.com/karoschal" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/twitter/follow/karoschal?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
 /></a>
+
+
+<!--My Coding Activity:waka-->
+<!--END_SECTION:waka-->
+
 ### Skills
 
 <p align="left">
