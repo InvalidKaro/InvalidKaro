@@ -76,3 +76,6 @@ src="https://img.shields.io/twitter/follow/karoschal?logo=twitter&style=for-the-
 ### Support Me
 
 <a href="https://www.buymeacoffee.com/invalidkaro"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200" /></a>
+
+<a href="https://readme-jokes.vercel.app"><img align="center" src="https://readme-jokes.vercel.app/api" alt="README Jokes"></a>
+
