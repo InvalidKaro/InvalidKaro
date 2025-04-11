@@ -11,7 +11,6 @@ I'm Karo, I'm 20 years old and I've gained a lot of experience in development an
 * 🖥️  See my portfolio at [InvalidKaro.dev](http://invalidkaro.dev)
 * ✉️  You can contact me at [mail@invalidkaro.dev](mailto:mail@invalidkaro.dev)
 * 🚀  I'm currently working on [Some smaller python projects](http://invalidkaro.dev)
-* 🧠  I'm learning Java
 * 🤝  I'm open to collaborating on Python and JS
 
 
