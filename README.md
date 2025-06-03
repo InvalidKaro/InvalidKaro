@@ -1,6 +1,7 @@
 Hi 👋 My name is Invalid Karo
 =============================
-[![spotify-github-profile]([[https://spotify-github-profile.vercel.app/api/view?uid=fakemaster087&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true](https://spotify-github-profile.kittinanx.com))](https://github.com/kittinan/spotify-github-profile)](https://spotify-github-profile.kittinanx.com)
+[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=fakemaster087&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true)](https://gith)
+
 
 Freelance & Web-Developer
 -------------------------
