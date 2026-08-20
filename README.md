@@ -15,9 +15,7 @@ I'm InvalidKaro, I've gained a lot of experience in development and programming.
 * 🤝  I'm open to collaborating on Python and JS
 
 
-<a href="https://www.x.com/karoschal" target="_blank" rel="noreferrer"><img
-src="https://img.shields.io/twitter/follow/karoschal?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
-/></a>
+
 
 
 <!--START_SECTION:waka-->
