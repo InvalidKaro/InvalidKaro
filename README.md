@@ -6,7 +6,7 @@ Hi 👋 My name is Invalid Karo
 Freelance & Web-Developer
 -------------------------
 
-I'm Karo, I'm 20 years old and I've gained a lot of experience in development and programming. I'm proficient in Python, CSS, HTML, JavaScript and know a little bit of C. In my free time I really enjoy chilling on Discord, programming or just watching a relaxing series on Netflix.
+I'm InvalidKaro, I've gained a lot of experience in development and programming. I'm proficient in Python, CSS, HTML, JavaScript and know a little bit of C. In my free time I really enjoy chilling on Discord, programming or just watching a relaxing series on Netflix.
 
 * 🌍  I'm based in Germany
 * 🖥️  See my portfolio at [InvalidKaro.dev](http://invalidkaro.dev)
