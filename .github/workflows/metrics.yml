@@ -1,0 +1,82 @@
+name: GitHub Metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 1 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: true
+
+jobs:
+  metrics:
+    name: Generate profile metrics
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: General profile metrics
+        uses: lowlighter/metrics@latest
+        with:
+          user: InvalidKaro
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ github.token }}
+          committer_branch: main
+          filename: metrics.svg
+          output_action: commit
+          base: header, activity, community, repositories, metadata
+          config_timezone: Europe/Berlin
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      - name: Language metrics
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          user: InvalidKaro
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ github.token }}
+          committer_branch: main
+          filename: languages.svg
+          output_action: commit
+          base: ""
+          config_timezone: Europe/Berlin
+          plugin_languages: yes
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+
+      - name: Coding habits
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          user: InvalidKaro
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ github.token }}
+          committer_branch: main
+          filename: habits.svg
+          output_action: commit
+          base: ""
+          config_timezone: Europe/Berlin
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+      - name: Achievements
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          user: InvalidKaro
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ github.token }}
+          committer_branch: main
+          filename: achievements.svg
+          output_action: commit
+          base: ""
+          config_timezone: Europe/Berlin
+          plugin_achievements: yes
+          plugin_achievements_display: compact
