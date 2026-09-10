@@ -62,7 +62,9 @@ jobs:
               repo_url = f"https://github.com/{repo}"
 
               if kind == "PushEvent":
-                  count = len(payload.get("commits", []) or [])
+                  count = payload.get("size")
+                  if count is None:
+                      count = len(payload.get("commits", []) or [])
                   branch = str(payload.get("ref", "")).replace("refs/heads/", "")
                   suffix = f" to `{branch}`" if branch else ""
                   lines.append(f"- 🚀 Pushed {count} commit{'s' if count != 1 else ''}{suffix} in [{repo}]({repo_url})")
@@ -81,7 +83,7 @@ jobs:
                   issue = payload.get("issue", {}) or {}
                   number = issue.get("number")
                   url = issue.get("html_url", repo_url)
-                  action = payload.get("action", "commented") if kind == "IssuesEvent" else "commented on"
+                  action = payload.get("action", "updated") if kind == "IssuesEvent" else "commented on"
                   lines.append(f"- 🧩 {action.capitalize()} issue [#{number}]({url}) in [{repo}]({repo_url})")
               elif kind == "ReleaseEvent":
                   rel = payload.get("release", {}) or {}
