@@ -15,43 +15,19 @@ I'm a developer from Germany focused on web development, automation, bots, embed
 ## Development Metrics
 
 <p align="center">
-  <img src="./metrics.svg" alt="InvalidKaro GitHub metrics" width="100%" />
+  <img src="https://raw.githubusercontent.com/InvalidKaro/InvalidKaro/main/metrics.svg" alt="InvalidKaro GitHub metrics" width="100%" />
 </p>
-
-## Coding Activity
-
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
 
 ## Recent GitHub Activity
 
 <!--START_SECTION:activity-->
-- 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
-- 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
-- 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
-- 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
-- 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
-- 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
-- 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
-- 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
+- Updating automatically…
 <!--END_SECTION:activity-->
 
 ## Languages
 
 <p align="center">
-  <img src="./languages.svg" alt="InvalidKaro language metrics" width="100%" />
-</p>
-
-## Coding Habits
-
-<p align="center">
-  <img src="./habits.svg" alt="InvalidKaro coding habits" width="100%" />
-</p>
-
-## Achievements
-
-<p align="center">
-  <img src="./achievements.svg" alt="InvalidKaro GitHub achievements" width="100%" />
+  <img src="https://raw.githubusercontent.com/InvalidKaro/InvalidKaro/main/languages.svg" alt="InvalidKaro language metrics" width="100%" />
 </p>
 
 ## Skills
