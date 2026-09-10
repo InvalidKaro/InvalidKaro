@@ -4,6 +4,10 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 */6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/recent-activity.yml"
 
 permissions:
   contents: write
@@ -22,14 +26,103 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update README with recent activity
-        uses: jamesgeorge007/github-activity-readme@master
+      - name: Build recent activity section
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          GH_USERNAME: InvalidKaro
-          MAX_LINES: 8
-          TARGET_FILE: README.md
-          COMMIT_MSG: "chore: update recent GitHub activity [skip ci]"
-          COMMIT_NAME: github-actions[bot]
-          COMMIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GH_TOKEN: ${{ github.token }}
+          GH_USER: InvalidKaro
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+          from pathlib import Path
+
+          user = os.environ["GH_USER"]
+          token = os.environ["GH_TOKEN"]
+          req = urllib.request.Request(
+              f"https://api.github.com/users/{user}/events/public?per_page=100",
+              headers={
+                  "Accept": "application/vnd.github+json",
+                  "Authorization": f"Bearer {token}",
+                  "User-Agent": "InvalidKaro-profile-readme"
+              },
+          )
+
+          with urllib.request.urlopen(req) as response:
+              events = json.load(response)
+
+          lines = []
+          for event in events:
+              kind = event.get("type", "")
+              repo = event.get("repo", {}).get("name", "")
+              payload = event.get("payload", {}) or {}
+              if not repo:
+                  continue
+
+              repo_url = f"https://github.com/{repo}"
+
+              if kind == "PushEvent":
+                  count = len(payload.get("commits", []) or [])
+                  branch = str(payload.get("ref", "")).replace("refs/heads/", "")
+                  suffix = f" to `{branch}`" if branch else ""
+                  lines.append(f"- 🚀 Pushed {count} commit{'s' if count != 1 else ''}{suffix} in [{repo}]({repo_url})")
+              elif kind == "CreateEvent":
+                  ref_type = payload.get("ref_type", "repository")
+                  ref = payload.get("ref")
+                  what = f"{ref_type} `{ref}`" if ref else ref_type
+                  lines.append(f"- ✨ Created {what} in [{repo}]({repo_url})")
+              elif kind == "PullRequestEvent":
+                  pr = payload.get("pull_request", {}) or {}
+                  number = pr.get("number") or payload.get("number")
+                  action = payload.get("action", "updated")
+                  url = pr.get("html_url", repo_url)
+                  lines.append(f"- 🔀 {action.capitalize()} PR [#{number}]({url}) in [{repo}]({repo_url})")
+              elif kind in {"IssuesEvent", "IssueCommentEvent"}:
+                  issue = payload.get("issue", {}) or {}
+                  number = issue.get("number")
+                  url = issue.get("html_url", repo_url)
+                  action = payload.get("action", "commented") if kind == "IssuesEvent" else "commented on"
+                  lines.append(f"- 🧩 {action.capitalize()} issue [#{number}]({url}) in [{repo}]({repo_url})")
+              elif kind == "ReleaseEvent":
+                  rel = payload.get("release", {}) or {}
+                  tag = rel.get("tag_name", "release")
+                  url = rel.get("html_url", repo_url)
+                  lines.append(f"- 📦 Published [{tag}]({url}) in [{repo}]({repo_url})")
+              elif kind == "ForkEvent":
+                  forkee = payload.get("forkee", {}) or {}
+                  target = forkee.get("full_name", repo)
+                  url = forkee.get("html_url", repo_url)
+                  lines.append(f"- 🍴 Forked [{repo}]({repo_url}) to [{target}]({url})")
+              elif kind == "WatchEvent":
+                  lines.append(f"- ⭐ Starred [{repo}]({repo_url})")
+
+              if len(lines) >= 8:
+                  break
+
+          if not lines:
+              lines = ["- No recent public GitHub activity found."]
+
+          path = Path("README.md")
+          text = path.read_text(encoding="utf-8")
+          start = "<!--START_SECTION:activity-->"
+          end = "<!--END_SECTION:activity-->"
+          if start not in text or end not in text:
+              raise SystemExit("Activity markers missing from README.md")
+
+          before, rest = text.split(start, 1)
+          _, after = rest.split(end, 1)
+          section = start + "\n" + "\n".join(lines) + "\n" + end
+          path.write_text(before + section + after, encoding="utf-8")
+          PY
+
+      - name: Commit README update
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No README changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update recent GitHub activity [skip ci]"
+          git push
