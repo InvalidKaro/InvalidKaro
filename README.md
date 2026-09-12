@@ -21,6 +21,7 @@ I'm a developer from Germany focused on web development, automation, bots, embed
 ## Recent GitHub Activity
 
 <!--START_SECTION:activity-->
+- 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - ⭐ Starred [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
 - 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `main` in [InvalidKaro/InvalidKaro](https://github.com/InvalidKaro/InvalidKaro)
@@ -28,7 +29,6 @@ I'm a developer from Germany focused on web development, automation, bots, embed
 - 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `main` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
-- 🚀 Pushed 0 commits to `main` in [InvalidKaro/InvalidKaro](https://github.com/InvalidKaro/InvalidKaro)
 <!--END_SECTION:activity-->
 
 ## Languages
