@@ -21,13 +21,13 @@ I'm a developer from Germany focused on web development, automation, bots, embed
 ## Recent GitHub Activity
 
 <!--START_SECTION:activity-->
-- ⭐ Starred [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `feature/govee-smart-home` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `feature/govee-smart-home` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `feature/govee-smart-home` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `feature/govee-smart-home` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `feature/govee-smart-home` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
-- 🔀 Opened PR [#6](https://github.com/InvalidKaro/Raspberry-Bot) in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
+- 🚀 Pushed 0 commits to `feature/govee-smart-home` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
+- 🚀 Pushed 0 commits to `feature/govee-smart-home` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `feature/govee-smart-home` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 <!--END_SECTION:activity-->
 
