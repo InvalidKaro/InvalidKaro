@@ -21,12 +21,12 @@ I'm a developer from Germany focused on web development, automation, bots, embed
 ## Recent GitHub Activity
 
 <!--START_SECTION:activity-->
+- 🔀 Merged PR [#11](https://github.com/InvalidKaro/Raspberry-Bot) in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
+- 🔀 Opened PR [#11](https://github.com/InvalidKaro/Raspberry-Bot) in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `main` in [InvalidKaro/stefa](https://github.com/InvalidKaro/stefa)
 - 🚀 Pushed 0 commits to `main` in [InvalidKaro/stefa](https://github.com/InvalidKaro/stefa)
 - 🚀 Pushed 0 commits to `main` in [InvalidKaro/stefa](https://github.com/InvalidKaro/stefa)
 - ✨ Created branch `main` in [InvalidKaro/stefa](https://github.com/InvalidKaro/stefa)
-- 🚀 Pushed 0 commits to `feature/homepi-dashboard-redesign` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
-- 🚀 Pushed 0 commits to `feature/homepi-dashboard-redesign` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `feature/homepi-dashboard-redesign` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 - 🚀 Pushed 0 commits to `feature/homepi-dashboard-redesign` in [InvalidKaro/Raspberry-Bot](https://github.com/InvalidKaro/Raspberry-Bot)
 <!--END_SECTION:activity-->
